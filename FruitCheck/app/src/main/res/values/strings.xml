@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">鲜果查查</string>
+    <string name="title_home">首页</string>
+    <string name="title_dashboard">历史记录</string>
+    <string name="title_notifications">我</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="take_photo">点击拍照</string>
+    <string name="content_label">测试选项</string>
+    <string name="report_title">测试报告</string>
+    <string name="report_subTitle">实验组: </string>
+    <string name="report_subTitle2">测试报告 </string>
+    <string name="report_name">----</string>
+    <string name="report_summary_title">结果分析:</string>
+    <string name="save_record">保存报告</string>
+    <string name="show_detail">点击查看明细</string>
+    <string name="camera_confirm">确定</string>
+    <string name="about_us">关于我们</string>
+    <string name="about_us_content">鲜果查查是由上海海洋大学师生开发的，用于快速检测
+    水果营养成分的App应用软件。通过试纸测试及App快速扫描打印报告，使您能快速了解被测水果的维生素C，葡萄糖
+    ，果糖等含量。是您贴心的掌上营养专家！</string>
+    <string name="contact_us">联系我们</string>
+    <string name="contact_info_email">554500370@qq.com</string>
+    <string name="contact_address">上海市浦东新区沪城环路999号上海海洋大学食品学院B437</string>
+
+</resources>

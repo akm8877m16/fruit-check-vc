@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- test option -->
+    <string-array name="test_choices">
+        <item>葡萄糖</item>
+        <item>果糖</item>
+        <item>维生素C</item>
+    </string-array>
+
+</resources>

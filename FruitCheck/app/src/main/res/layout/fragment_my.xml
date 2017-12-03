@@ -1,0 +1,168 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.check.fruit.fruitcheck.fragments.myFragment">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/school"
+        android:adjustViewBounds="true"
+    android:layout_gravity="center"
+    android:gravity="center_vertical"
+        android:layout_marginTop="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars = "none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border">
+
+        <RelativeLayout
+            android:id="@+id/about_us_col"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/about_us"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="关于我们"
+                android:layout_marginLeft="20dp"
+                android:textSize="18dp"
+                android:layout_weight="0.8"/>
+
+            <ImageButton
+                android:id="@+id/show_detail3"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="18dp"
+                android:src="@drawable/ic_navigate_next_black_18dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/transparent"
+                 />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/about_us_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/about_us_col"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="\u3000\u3000鲜果查查是由上海海洋大学师生开发的，用于快速检测水果营养成分的App应用软件。通过试纸测试及App快速扫描打印报告，使您能快速了解被测水果的维生素C，葡萄糖，果糖等含量。是您贴心的掌上营养专家！"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+                <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/border">
+
+        <RelativeLayout
+            android:id="@+id/contact_us_col"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:focusableInTouchMode="false">
+
+            <TextView
+                android:id="@+id/contact_us"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="联系我们"
+                android:layout_marginLeft="20dp"
+                android:textSize="18dp"
+                android:layout_weight="0.8"/>
+
+            <ImageButton
+                android:id="@+id/show_detail4"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="18dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_navigate_next_black_18dp" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/contact_us_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系邮箱:  zhu@shou.edu.cn\n\u3000\u3000\u3000\u3000   yzhao@shou.edu.cn\n\n地址：上海市浦东新区沪城环路999号上海海洋大学食品学院B437"
+            android:textSize="16dp"
+            android:layout_below="@+id/contact_us_col"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"/>
+
+
+    </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/border">
+
+                    <RelativeLayout
+                        android:id="@+id/instruct_col"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp">
+
+                        <TextView
+                            android:id="@+id/instruct"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="App操作指南"
+                            android:layout_marginLeft="20dp"
+                            android:textSize="18dp"
+                            android:layout_weight="0.8"/>
+
+                        <ImageButton
+                            android:id="@+id/show_detail5"
+                            android:layout_width="50dp"
+                            android:layout_height="60dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="18dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/ic_navigate_next_black_18dp" />
+                    </RelativeLayout>
+                    <ImageView
+                        android:id="@+id/instruct_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:layout_below="@+id/instruct_col"
+                        android:src="@drawable/instruct"
+                       />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/report_item_border_with_shadow"
+    android:focusableInTouchMode="false"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/reportList_title"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="@string/report_subTitle"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            />
+        <TextView
+            android:id="@+id/reportList_name"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="@string/report_title"
+            android:layout_alignBottom="@+id/reportList_title"
+            android:layout_toRightOf="@+id/reportList_title"
+            android:layout_marginLeft="10dp"
+            android:maxLines="3"
+            />
+        <ImageView
+            android:id="@+id/show_detail"
+            android:layout_width="14dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:adjustViewBounds="true"
+            android:layout_alignBottom="@+id/reportList_title"
+            android:src="@drawable/ic_navigate_next_black_18dp"
+            />
+        <Button
+            android:id="@+id/reportDetail_check"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:textSize="12dp"
+            android:textColor="#333333"
+            android:minHeight="0dp"
+            android:gravity="bottom|center"
+            android:text="@string/show_detail"
+            android:layout_alignBottom="@+id/reportList_title"
+            android:layout_toLeftOf="@id/show_detail"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/report_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/report_subTitle2"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="@string/report_subTitle2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            />
+
+        <ListView
+            android:id="@+id/report_content2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/report_subTitle2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:dividerHeight="1px"
+            android:divider="@android:color/darker_gray"
+            android:background="@drawable/report_border">
+        </ListView>
+
+        <TextView
+            android:id="@+id/report_summary_title2"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="@string/report_summary_title"
+            android:layout_below="@id/report_content2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="45dp"
+            />
+
+        <TextView
+            android:id="@+id/report_summary2"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="水果含量丰富"
+            android:maxLines="3"
+            android:textSize="14dp"
+            android:layout_below="@id/report_summary_title2"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginBottom="20dp"
+            />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

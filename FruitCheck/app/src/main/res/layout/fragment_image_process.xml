@@ -1,0 +1,223 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.check.fruit.fruitcheck.fragments.imageProcess">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:id="@+id/image_process_view_parent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:background="@color/colorSkyBlue">
+
+            <RelativeLayout
+                android:id="@+id/image_process_view_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorGray">
+
+                <ImageView
+                    android:id="@+id/processView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_process_view_layout"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/transparent"
+                android:text="@string/take_photo"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <Spinner
+                android:id="@+id/test_option"
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="150dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_corner"
+                android:drawSelectorOnTop="false"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/saveRecord"
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="29dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_corner"
+                android:text="@string/save_record"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="13dp" />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5">
+             <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars = "none"
+
+           >
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            style="@style/Widget.SampleDashboard.Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/report_left_border">
+
+                    <TextView
+                        android:id="@+id/report_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/report_title"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/result_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dp"
+
+                        android:adjustViewBounds="true"
+                        android:layout_marginTop="22dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@+id/report_title"
+                        />
+
+                    <View
+                        android:id="@+id/line1"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@id/report_title"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <TextView
+                        android:id="@+id/report_subTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/line1"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/report_subTitle"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/report_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/report_subTitle"
+                        android:layout_below="@id/line1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/report_subTitle"
+                        android:maxLines="3"
+                        android:text="@string/report_name"
+                        android:textSize="16dp" />
+
+                    <ListView
+                        android:id="@+id/report_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_below="@id/report_subTitle"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/report_border"
+                        android:divider="@android:color/darker_gray"
+                        android:dividerHeight="1px">
+
+                    </ListView>
+
+                    <TextView
+                        android:id="@+id/report_summary_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/report_content"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/report_summary_title"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/report_summary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/report_summary_title"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="5dp"
+                        android:maxLines="3"
+                        android:text=""
+                        android:textSize="14dp" />
+
+                </RelativeLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ad_bottom"/>
+
+         </LinearLayout>
+        </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
